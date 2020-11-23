@@ -3,12 +3,12 @@
 //Space complexity O(1)
 
     public int singleNumber(int[] nums) {
-            int res = 0;
-            for(int i : nums){
-                
-                res ^= i;
-            }
-            return res;
+        int res = 0;
+        for(int i : nums){
+            
+            res ^= i;
+        }
+        return res;
     }
 
 
@@ -22,8 +22,7 @@
         for (int i = 0; i<nums.length; i++){
             if(set.contains(nums[i])){
                 set.remove(nums[i]);
-            }
-            else{
+            }else{
                 set.add(nums[i]);
             }
         }
@@ -32,4 +31,4 @@
             res = j;
         }
         return res;
-}
+    }
